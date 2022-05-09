@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Encriptador De Texto</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Relaway:wght@100;400;600;700&display=swap" rel="stylesheet">
+<script src="./script.js" defer></script>
+</head>
+<body>
+
+<div class="header">
+    <img src="./Imagenes/Logo.png">
+    <h1>Encriptador/Desencriptador</h1>
+</div>
+
+<div class="container">
+    <div class="main_container">
+      <textarea name="textBox" id="textBox" cols="10" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+      <div class="encrypt_decrypt_container">
+        <div class="warning_container">
+          <img src="./Imagenes/warning.png">
+          <p class="input_warning">Sólo letras minúsculas y sin acentos</p>
+        </div>
+        <div class="encrypt_decrypt_buttons">
+          <button type="button" id="encryptButton" onclick="encryptTextv2()">
+            Encriptar
+          </button>
+          <button type="button" id="decryptButton" onclick="decryptText()">
+            Desencriptar
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="result_box">
+      <h5 id="resultsTitle"></h5>
+      <textarea readonly="" id="results"> </textarea>
+      <div id="notFound"><img class="img_not_found" src="./Imagenes/Muñeco.png" alt>
+      <h5>Ningún mensaje fue encontrado</h5>
+    <p>Ingresa el texto que deseas encriptar o desencriptar</p>
+  </div>
+
+     
+
+      <button type="button" id="copyResultButton" onclick="copyText()" style="display: block;">
+        Copiar
+      </button>
+    </div>
+  </div>
+  <hr class="footer_hr">
+  <footer>
+    
+    <div>
+      <span><span id="year">2022</span>
+      Franco Rios</span>
+    </div>
+    
+  </footer>
+
+
+    
+</body>
+</html>
